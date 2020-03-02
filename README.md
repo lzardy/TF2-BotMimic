@@ -9,9 +9,7 @@ Team Fortress 2 Dodgeball - Bot Mimic
 
 # Requirements
 
-###### [TF2Items](https://forums.alliedmods.net/showthread.php?p=1050170) ######
-
-###### [TF2Attributes](https://forums.alliedmods.net/showthread.php?t=210221) ######
+- All files in the **includes** folder.
 
 # Credits 
 
