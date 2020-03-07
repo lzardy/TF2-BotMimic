@@ -1,7 +1,7 @@
-#if defined _tfdbbot_included
+#if defined _tfdb_bot_included
  #endinput
 #endif
-#define _tfdbbot_included
+#define _tfdb_bot_included
 
 /**
  * Check if the bot is enabled.
@@ -23,10 +23,10 @@ native int TFDB_flicksOwner(const char[] owner);
  */
 native int TFDB_flicksPath(const char[] path);
 
-public SharedPlugin __pl_tfdbbot = 
+public SharedPlugin __pl_tfdb_bot = 
 {
-	name = "tfdb_botmimic",
-	file = "tfdb_botmimic.smx",
+	name = "tfdb_bot",
+	file = "tfdb_bot.smx",
 #if defined REQUIRE_PLUGIN
 	required = 1
 #else
@@ -35,7 +35,7 @@ public SharedPlugin __pl_tfdbbot =
 };
 
 #if !defined REQUIRE_PLUGIN
-public void __pl_botmimic_SetNTVOptional()
+public void __pl_tfdb_bot_SetNTVOptional()
 {
 	MarkNativeAsOptional("TFDB_botEnabled");
 	MarkNativeAsOptional("TFDB_flicksPath");

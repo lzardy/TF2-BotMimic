@@ -14,7 +14,7 @@
 #include <sdkhooks>
 #include <smlib>
 #include <tfdb_botmimic>
-#include <advancedbot>
+#include <tfdb_bot>
 
 #undef REQUIRE_EXTENSIONS
 #include <dhooks>

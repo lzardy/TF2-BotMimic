@@ -1,7 +1,7 @@
-#if defined _botmimic_included
+#if defined _tfdb_botmimic_included
   #endinput
 #endif
-#define _botmimic_included
+#define _tfdb_botmimic_included
 
 #define MAX_RECORD_NAME_LENGTH 64
 #define MAX_BOOKMARK_NAME_LENGTH 64
@@ -366,7 +366,7 @@ stock void TFDB_BotMimic_GetErrorString(BMError error, char[] str, int maxlen)
 	}
 }
 
-public SharedPlugin __pl_botmimic = 
+public SharedPlugin __pl_tfdb_botmimic = 
 {
 	name = "tfdb_botmimic",
 	file = "tfdb_botmimic.smx",
@@ -378,7 +378,7 @@ public SharedPlugin __pl_botmimic =
 };
 
 #if !defined REQUIRE_PLUGIN
-public void __pl_botmimic_SetNTVOptional()
+public void __pl_tfdb_botmimic_SetNTVOptional()
 {
 	MarkNativeAsOptional("TFDB_BotMimic_StartRecording");
 	MarkNativeAsOptional("TFDB_BotMimic_PauseRecording");
